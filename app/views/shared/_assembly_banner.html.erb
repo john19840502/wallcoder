@@ -1,0 +1,21 @@
+<div class="bg-primary" data-dismissable="announcement" style="display:none">
+  <div class="container">
+    <div class="row">
+      <div class="announcement col-md-12">
+        <p class="text-center">
+          <a href='https://assembly.com/coderwall?utm_campaign=assemblage&utm_source=coderwall&utm_medium=flair_widget&utm_content=flag'>
+            <img src='https://d1b1o966bfdaym.cloudfront.net/a7b405350025be8ab1ebeb53f8bd98a5.svg' class="asm-brand" />
+          </a>
+          See what we’re up to on
+          <a href="https://assembly.com/coderwall?utm_campaign=coderwall&utm_source=coderwall&utm_medium=text_link" target="_blank"> Coderwall’s Changelog </a>
+          and give us some feedback
+          <a class="js-dismiss close" href="#close">x</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'dismissable' %>
+<% end %>

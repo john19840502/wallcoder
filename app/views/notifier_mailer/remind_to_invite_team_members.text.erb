@@ -1,0 +1,10 @@
+Hey Friend,
+
+The <%= @user.team.name %> team page looks great. Have you invited your whole team to join yet?
+
+To add team members, just share this private link: <%= invitation_url(@user.team.id, :r => CGI.escape(@user.referral_token)) %>
+
+Matt & the Coderwall team
+P.S. Make sure to follow us on twitter (@coderwall)
+
+Check out the FAQ (https://coderwall.com/faq) if you have questions about how teams work.

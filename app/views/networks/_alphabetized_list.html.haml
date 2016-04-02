@@ -1,0 +1,11 @@
+- networks = networks_list.sort_by(&:name)
+- unless networks.blank?
+  - current_char = networks.first.name[0]
+  - alpha_networks = []
+  - networks.each do |network|
+    - if current_char != network.name[0]
+      = render :partial => "alpha_network", :locals => {:alphabet => current_char, :networks => alpha_networks}
+      - alpha_networks = []
+    - alpha_networks << network
+    - current_char = network.name[0]
+  = render :partial => "alpha_network", :locals => {:alphabet => current_char, :networks => alpha_networks}

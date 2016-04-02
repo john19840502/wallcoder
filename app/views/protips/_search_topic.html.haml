@@ -1,0 +1,11 @@
+- content_for :javascript do
+  = javascript_include_tag 'history.adapter.jquery.js'
+  = javascript_include_tag 'history.js'
+
+.search-container#search
+  %section.inside-search-container
+    %header.search-header.cf
+    %section.tips-section
+    %header.cf#search-results
+      #more
+

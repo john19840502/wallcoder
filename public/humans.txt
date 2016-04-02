@@ -1,0 +1,166 @@
+/* TEAM */
+Founder: Matt Deiters
+Contact: mdeiters [at] assembly.com
+GitHub: @mdeiters
+From: San Francisco, CA, United States
+
+Core Team/Assembly: Dave Newman
+Contact: dave [at] assembly.com
+GitHub: @whatupdave
+From: San Francisco, CA, United States
+
+Core Team/Assembly: Chris Lloyd
+Email: chris [at] assembly.com
+GitHub: @chrislloyd
+Location: San Francisco, CA, United States
+
+Core Team: Abdelkader Boudih
+Email: terminale [at] googlemail.com
+GitHub: @seuros
+Location: Morocco
+
+Core Team: Jonathan Archer
+Email: ja [at] jonathanarcher.co
+GitHub: @j0narch3r
+Location: San Francisco, CA, United States
+
+
+Contributor: Mike Hall
+Email: mike [at] just3ws.com
+GitHub: @just3ws
+Location: Crystal Lake, IL
+
+Contributor: Rohit Paul Kuruvilla
+Email: rohitpaulk [at] live.com
+GitHub: @rohitpaulk
+Location: Punjab, India
+
+Contributor: Zane Wolfgang Pickett
+Email: Zane.Wolfgang.Pickett [at] Gmail.com
+GitHub: @sirwolfgang
+Location: United States
+
+Contributor: Yaro
+Email: yaro [at] mail.ru
+GitHub: @YaroSpace
+Location: Tenerife
+
+Contributor: Britt Mileshosky
+GitHub: @Mileshosky
+
+Contributor: Nícolas Iensen
+Email: nicolas.iensen [at] gmail.com
+GitHub: @nicolasiensen
+Location: Rio de Janeiro
+
+Contributor: Dane Lyons
+GitHub: @DaneLyons
+Location: SF
+
+Contributor: Matthew Bender
+GitHub: @codebender
+Location: Denver, CO
+
+Contributor: Rex Morgan
+GitHub: @RexMorgan
+Location: Austin, Texas
+
+Contributor: Wesley Lancel
+GitHub: @wesleylancel
+Location: Belgium / The Netherlands
+
+Contributor: Vinoth kumar A
+Email: mail [at] avinoth.com
+GitHub: @avinoth
+Location: India
+
+Contributor: Silas Sao
+Email: silassao [at] gmail.com
+GitHub: @sao
+Location: Portland, OR
+
+Contributor: Brandon Fish
+GitHub: @bjfish
+Location: Minneapolis, MN
+
+Contributor: Carl Woodward
+Email: carl [at] 88cartell.com
+GitHub: @carlwoodward
+Location: Sydney
+
+Contributor: Justin Raines
+Email: justraines [at] gmail.com
+GitHub: @dvito
+Location: Washington, DC
+
+Contributor: Ben
+Email: hello [at] benshyong.com
+GitHub: @bshyong
+
+Contributor: Anthony Kosednar
+Email: anthony.kosednar [at] gmail.com
+GitHub: @akosednar
+Location: USA
+
+Contributor: Aaron Raimist
+Email: aaronraimist [at] protonmail.ch
+GitHub: @aaronraimist
+Location: St. Louis
+
+Contributor: Daniel Yang
+GitHub: @ddyy
+Location: Atlanta -> Chicago
+
+Contributor: Lixon Louis
+Email: lixonic [at] gmail.com
+GitHub: @lixonic
+Location: Cochin, Kerala
+
+Contributor: Anton Podviaznikov
+Email: podviaznikov [at] gmail.com
+GitHub: @podviaznikov
+Location: San Francisco
+
+Contributor: Mohamed Alouane
+Email: 3louane [at] gmail.com
+GitHub: @alouanemed
+Location: Morocco
+
+Contributor: Hector Yee
+Email: hector.yee [at] gmail.com
+GitHub: @hectorgon
+Location: San Francisco, CA
+
+Contributor: Jake Gavin
+Email: jake [at] pco.bz
+GitHub: @jakegavin
+Location: Seattle
+
+Contributor: Jon Khaykin
+GitHub: @jkhaykin
+
+Contributor: Drew Blas
+GitHub: @drewblas
+
+
+/* SITE */
+Last update: 2015/03/10
+Standards: HTML5, CSS3
+Components: Ruby on Rails, jQuery, Sass, Backbone.js, PostgreSQL, ElasticSearch, Redis, etc.
+Software: Vim, Tmux, Vagrant, Git, etc.
+Language: English
+IDE: Vim
+Doctype: HTML5
+
+   ____          _                         _ _
+  / ___|___   __| | ___ _ ____      ____ _| | |
+ | |   / _ \ / _` |/ _ \ '__\ \ /\ / / _` | | |
+ | |__| (_) | (_| |  __/ |   \ V  V / (_| | | |
+  \____\___/ \__,_|\___|_|    \_/\_/ \__,_|_|_|
+
+
+Coderwall is a professional network for software engineers.
+
+We're an open-source company on Assembly. Contribute to Coderwall to earn a stake in the company.
+
+Join our chat room at https://assembly.com/coderwall.

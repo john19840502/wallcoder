@@ -1,0 +1,9 @@
+Hey <%= @user.short_name %>,
+
+<%= @commentor.username %> replied to your comment on the pro tip: <%= @comment.protip.title %>
+
+<%= @comment.body %>
+
+View/Reply: <%= protip_url(@comment.protip.public_id, :reply_to => "@#{@commentor.username}") + "#comment_#{@comment.id}" %>
+
+<%= NotifierMailer::SPAM_NOTICE %>

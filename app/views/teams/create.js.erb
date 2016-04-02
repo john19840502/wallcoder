@@ -1,0 +1,5 @@
+$('section.feature:not(.payment)').hide();
+$('section.feature.payment').append('<%= escape_javascript(render :partial => "payment", :locals => {:account => @team.account || @team.build_account, :plan => @team.account.try(:current_plan)}) %>');
+$('section.feature.payment').show();
+setupPayment();
+

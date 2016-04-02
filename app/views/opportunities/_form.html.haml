@@ -1,0 +1,63 @@
+
+
+=form_for [@team, @job] do |j|
+  =render "shared/error_messages", target: @job
+  =j.hidden_field :team_id
+
+  .horizontal
+    %fieldset.job-title
+      =j.label :name, 'Title of Position'
+      =j.text_field :name
+
+    %fieldset.job-type
+      =j.label :opportunity_type, 'Type of position'
+      =j.select :opportunity_type, Opportunity::OPPORTUNITY_TYPES, selected: "full-time"
+
+  %fieldset
+    =j.label :description, 'Description about this role (Markdown formatting supported)'
+    =j.text_area :description
+
+  %fieldset
+    =j.label :tag_list, 'Primary skills the person will use. (comma separated)'
+    =j.text_field :tag_list, value: params[:tag_list] || @job.tag_list.join(",")
+
+  %fieldset
+    -if @team.locations.any?
+      =j.label :location do
+        == Select one or more locations where the candidate must be located or #{link_to('add/manage team locations', teamname_edit_path(slug: @team.slug, anchor: "locations"))}
+      =j.select(:location, @team.cities+["anywhere"], {selected: (@job.location.blank? ? [] : @job.location.split("|"))}, {multiple: true})
+    -else
+      =j.label :location, 'Specify the city/location where the candidate must be located'
+      =j.text_field :location
+
+  %fieldset
+    =j.label :remote do
+      =j.check_box :remote
+      Allow remote
+
+  %fieldset
+    =j.label :link, 'Link to full job posting on your career site (ex: http://example.com/career)'
+    =j.text_field :link
+  %fieldset
+    =j.label :max_salary, "Maximum compensation/salary (remains private)"
+    =j.text_field :salary
+
+  %fieldset.apply-through
+    =j.label 'Apply through'
+    %ul
+      %li
+        =j.label :apply do
+          ==Coderwall #{link_to 'learn more', faq_path(:anchor => 'apply'), :target => :new}
+      %li
+        =j.radio_button :apply, true
+        = "Applicants mailed to #{@team.name}'s admins emails"
+    %ul
+      %li
+        =j.label "#{@team.name}'s website"
+      %li
+        =j.radio_button :apply, false
+
+
+  %fieldset.save-cancel
+    =j.submit 'Save'
+    =link_to('Cancel', :back)

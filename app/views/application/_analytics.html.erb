@@ -1,0 +1,36 @@
+<meta name="google" value="notranslate">
+
+<% if ENV['GOOGLE_SITE_VERIFICATION'] %>
+  <meta name="google-site-verification" content="<%= ENV['GOOGLE_SITE_VERIFICATION'] %>">
+<% end %>
+
+<% if ENV['GOOGLE_ANALYTICS'] %>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', "<%= ENV['GOOGLE_ANALYTICS'] %>", 'auto');
+    ga('require', 'linkid', 'linkid.js');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+<% end %>
+
+
+<% if ENV['ASMLYTICS'] %>
+  <script type="text/javascript">
+  ;(function(p,l,o,w,i){if(!p[i]){p.__asml=p.__asml||[];
+  p.__asml.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+  };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+  n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","https://d1uxm17u44dmmr.cloudfront.net/1.0.0/asml.js","asml"));
+
+  asml('create', '<%= ENV['ASMLYTICS'] %>');
+  <% if signed_in? %>
+    asml('track', '<%= current_user.email %>');
+  <% else %>
+    asml('track');
+  <% end %>
+  </script>
+<% end %>

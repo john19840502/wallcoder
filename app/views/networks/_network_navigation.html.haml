@@ -1,0 +1,14 @@
+%header.cf.second-level-header.networks-header
+  -#%input.network-search(type='text' value='search networks')
+  / %h1
+  - unless network.nil?
+    %h1.underline-test{:style => "border-color:##{color_signature(network.slug)}"}
+      = network.name
+  - else
+    %h1
+      Networks
+  /   All Networks
+  %ul.second-level-toplinks
+    %li
+      %a{:href => networks_path, :class => networks_nav_class(:index)}
+        All networks
